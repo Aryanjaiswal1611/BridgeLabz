@@ -1,0 +1,191 @@
+1. Employee Management System
+Class Design:
+
+Abstract class Employee
+
+Fields: employeeId, name, baseSalary (private with getters/setters)
+
+Abstract method: calculateSalary()
+
+Concrete method: displayDetails()
+
+Subclasses:
+
+FullTimeEmployee → salary based on fixed structure
+
+PartTimeEmployee → salary based on work hours
+
+Interface Department
+
+Methods: assignDepartment(), getDepartmentDetails()
+
+Key Concepts:
+
+Use encapsulation (private fields, public getters/setters).
+
+Use polymorphism by processing a list of Employee objects.
+
+✅ 2. E-Commerce Platform
+Class Design:
+
+Abstract class Product
+
+Fields: productId, name, price (private with getters/setters)
+
+Abstract method: calculateDiscount()
+
+Concrete subclasses:
+
+Electronics, Clothing, Groceries
+
+Interface Taxable
+
+Methods: calculateTax(), getTaxDetails()
+
+Key Concepts:
+
+Implement encapsulation for product details.
+
+Demonstrate polymorphism by calculating final price using tax and discounts.
+
+✅ 3. Vehicle Rental System
+Class Design:
+
+Abstract class Vehicle
+
+Fields: vehicleNumber, type, rentalRate
+
+Abstract method: calculateRentalCost(int days)
+
+Subclasses:
+
+Car, Bike, Truck → implement rental cost differently
+
+Interface Insurable
+
+Methods: calculateInsurance(), getInsuranceDetails()
+
+Key Concepts:
+
+Restrict access to sensitive data like insurance numbers.
+
+Iterate through a list of Vehicle objects for rental cost calculation.
+
+✅ 4. Banking System
+Class Design:
+
+Abstract class BankAccount
+
+Fields: accountNumber, holderName, balance
+
+Concrete methods: deposit(), withdraw()
+
+Abstract method: calculateInterest()
+
+Subclasses:
+
+SavingsAccount, CurrentAccount
+
+Interface Loanable
+
+Methods: applyForLoan(), calculateLoanEligibility()
+
+Key Concepts:
+
+Encapsulation to secure account details.
+
+Polymorphism for dynamic interest calculations.
+
+✅ 5. Library Management System
+Class Design:
+
+Abstract class LibraryItem
+
+Fields: itemId, title, author
+
+Abstract method: getLoanDuration()
+
+Concrete method: getItemDetails()
+
+Subclasses:
+
+Book, Magazine, DVD
+
+Interface Reservable
+
+Methods: reserveItem(), checkAvailability()
+
+Key Concepts:
+
+Secure borrower’s data using encapsulation.
+
+Manage different item types through polymorphism.
+
+✅ 6. Online Food Delivery System
+Class Design:
+
+Abstract class FoodItem
+
+Fields: itemName, price, quantity
+
+Abstract method: calculateTotalPrice()
+
+Concrete method: getItemDetails()
+
+Subclasses:
+
+VegItem, NonVegItem → include extra charges where applicable
+
+Interface Discountable
+
+Methods: applyDiscount(), getDiscountDetails()
+
+Key Concepts:
+
+Encapsulation to control order modifications.
+
+Use polymorphism to process different food items together.
+
+✅ 7. Hospital Patient Management
+Class Design:
+
+Abstract class Patient
+
+Fields: patientId, name, age
+
+Abstract method: calculateBill()
+
+Concrete method: getPatientDetails()
+
+Subclasses:
+
+InPatient, OutPatient → implement billing logic differently
+
+Interface MedicalRecord
+
+Methods: addRecord(), viewRecords()
+
+Key Concepts:
+
+Protect sensitive patient information.
+
+Handle different patient types using polymorphism.
+
+✅ 8. Ride-Hailing Application
+Class Design:
+
+Abstract class Vehicle
+
+Fields: vehicleId, driverName, ratePerKm
+
+Abstract methods: calculateFare(double distance)
+
+Concrete method: getVehicleDetails()
+
+Subclasses:
+
+Car, Bike, Auto → specific fare calculations
+
+Interface GPS
+
+Methods: getCurrentLocation(), updateLocation()
